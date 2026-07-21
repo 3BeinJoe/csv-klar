@@ -1,0 +1,10 @@
+.DS_Store
+node_modules/
+coverage/
+dist/
+*.log
+__pycache__/
+*.pyc
+content/render/frames/
+content/video-*/frame-*.png
+content/video-*/contact-sheet.jpg

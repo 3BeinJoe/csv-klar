@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Prüfe CSV-Dateien lokal auf leere Werte, Dubletten und Strukturfehler.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta name="theme-color" content="#11664f">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="CSV Klar — lokale Datenqualitätsprüfung">
+  <meta property="og:description" content="Finde leere Werte, doppelte Zeilen und Strukturfehler, ohne deine CSV-Datei hochzuladen.">
+  <title>CSV Klar — lokale Datenqualitätsprüfung</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="./site.webmanifest">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="CSV Klar Startseite">
+      <span class="brand-mark" aria-hidden="true">CK</span>
+      <span>CSV Klar</span>
+    </a>
+    <span class="privacy-note">Läuft lokal · Keine Uploads</span>
+  </header>
+
+  <main>
+    <section class="workspace" aria-labelledby="page-title">
+      <div class="intro">
+        <p class="eyebrow">DATENQUALITÄT IM BROWSER</p>
+        <h1 id="page-title">Was stimmt mit deiner CSV-Datei nicht?</h1>
+        <p>Finde leere Werte, doppelte Zeilen und Strukturfehler, bevor sie deinen Import oder Bericht beschädigen.</p>
+      </div>
+
+      <div id="dropzone" class="dropzone" tabindex="0" role="button" aria-describedby="drop-help">
+        <input id="file-input" type="file" accept=".csv,text/csv" hidden>
+        <div class="drop-icon" aria-hidden="true">CSV</div>
+        <strong>CSV-Datei hier ablegen</strong>
+        <span id="drop-help">oder vom Computer auswählen</span>
+        <button id="choose-button" class="button primary" type="button">Datei auswählen</button>
+        <span class="file-limit">UTF-8 · Maximal 10 MB · Bleibt auf diesem Gerät.</span>
+      </div>
+
+      <div class="sample-action">
+        Noch keine Datei zur Hand?
+        <button id="sample-button" class="text-button" type="button">Beispieldaten prüfen</button>
+      </div>
+      <p id="file-error" class="file-error" role="alert" hidden></p>
+    </section>
+
+    <section id="results" class="results" aria-live="polite" hidden>
+      <div class="results-heading">
+        <div>
+          <p class="eyebrow">PRÜFBERICHT</p>
+          <h2 id="result-title">Analyse</h2>
+          <p id="result-meta" class="muted"></p>
+        </div>
+        <div class="result-actions">
+          <button id="new-file-button" class="button secondary" type="button">Andere Datei</button>
+          <button id="download-button" class="button primary" type="button">Bericht herunterladen</button>
+        </div>
+      </div>
+
+      <div id="summary" class="summary" aria-label="Zusammenfassung"></div>
+
+      <div class="result-grid">
+        <section class="panel" aria-labelledby="issues-title">
+          <div class="panel-heading">
+            <h3 id="issues-title">Gefundene Probleme</h3>
+            <span id="issue-count" class="count"></span>
+          </div>
+          <div id="issues"></div>
+        </section>
+
+        <section class="panel" aria-labelledby="columns-title">
+          <div class="panel-heading">
+            <h3 id="columns-title">Spaltenübersicht</h3>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Spalte</th><th>Leer</th><th>Eindeutig</th></tr></thead>
+              <tbody id="columns"></tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="trust">
+      <h2>Privat by Design</h2>
+      <p>Die Analyse findet vollständig in deinem Browser statt. Die ausgewählte Datei wird weder übertragen noch gespeichert.</p>
+    </section>
+  </main>
+
+  <footer>
+    <span>CSV Klar · MVP 0.1</span>
+    <span>Kein Konto. Kein Upload. Keine versteckten Daten.</span>
+  </footer>
+
+  <script type="module" src="./src/app.js"></script>
+</body>
+</html>

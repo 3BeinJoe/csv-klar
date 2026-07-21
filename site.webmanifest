@@ -1,0 +1,17 @@
+{
+  "name": "CSV Klar",
+  "short_name": "CSV Klar",
+  "description": "Lokale Datenqualitätsprüfung für CSV-Dateien",
+  "lang": "de",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f5f3ed",
+  "theme_color": "#11664f",
+  "icons": [
+    {
+      "src": "./favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+name: Alpha-Feedback
+about: Rückmeldung zu CSV Klar geben
+labels: feedback
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Danke für den Test. Bitte keine Datei, personenbezogenen Daten oder vertraulichen Inhalte anhängen.
+  - type: dropdown
+    id: result
+    attributes:
+      label: Konntest du deine CSV-Datei prüfen?
+      options:
+        - Ja
+        - Teilweise
+        - Nein
+    validations:
+      required: true
+  - type: textarea
+    id: confusion
+    attributes:
+      label: Was war unverständlich oder unerwartet?
+    validations:
+      required: true
+  - type: textarea
+    id: missing
+    attributes:
+      label: Welches Datenproblem sollte CSV Klar zusätzlich erkennen?
+  - type: textarea
+    id: paid
+    attributes:
+      label: Welche automatische Korrektur wäre für dich wertvoll?
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Datenschutz
+      options:
+        - label: Ich habe keine Datei oder vertraulichen Daten beigefügt.
+          required: true
