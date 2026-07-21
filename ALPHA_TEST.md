@@ -13,9 +13,11 @@ Nicht nach allgemeiner Meinung fragen, sondern beobachten, ob CSV Klar ein reale
 
 Keine sensiblen oder personenbezogenen Produktionsdaten verwenden. Wenn nötig, eine Kopie anonymisieren.
 
+Das Protokoll ist öffentlich versioniert. Darin niemals Namen, Handles, E-Mail-Adressen, Dateinamen oder andere identifizierende Angaben speichern; Testpersonen nur mit pseudonymen IDs wie `T01` erfassen.
+
 ## Einladung
 
-> Ich teste ein kleines, lokal laufendes Werkzeug zur Prüfung von CSV-Dateien. Die Datei wird nicht hochgeladen. Hättest du zehn Minuten, um es mit einer unkritischen Datei auszuprobieren? Mich interessiert vor allem, was unverständlich ist oder fehlt.
+> Ich teste ein kleines, lokal laufendes Werkzeug zur Prüfung von CSV-Dateien. Die Datei wird nicht hochgeladen. Hättest du zehn Minuten, um es mit einer anonymisierten oder synthetischen Datei auszuprobieren? Mich interessiert vor allem, was unverständlich ist oder fehlt. Falls es nicht passt, brauchst du nicht zu antworten; ich frage dann nicht erneut.
 
 ## Ablauf
 

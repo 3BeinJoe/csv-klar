@@ -12,6 +12,8 @@ Die verbreitete Annahme „CSV bedeutet Komma“ wird in zwölf Sekunden korrigi
 4. 8,8–10,5 s — Auflösung: `Der Trenner war falsch.`
 5. 10,5–12,5 s — Produkt-CTA: `Prüfe deine CSV kostenlos.` und `CSV Klar`.
 
+Veröffentlichungsziel: `https://3beinjoe.github.io/csv-klar/` als Profil-Link beziehungsweise Beschreibung; die lange URL bleibt zugunsten der Lesbarkeit außerhalb des Videobilds.
+
 ## Gestaltung
 
 - Hochformat 1080 × 1920, 30 FPS

@@ -15,10 +15,10 @@
 
 ## Vor öffentlicher Veröffentlichung erforderlich
 
-- [ ] GitHub-Konto anmelden: `gh auth login`
-- [ ] öffentliches Repository `csv-klar` erstellen
-- [ ] Repository pushen und GitHub Pages aktivieren
-- [ ] veröffentlichte URL in allen Profilen und CTAs eintragen
+- [x] GitHub-Konto anmelden: `gh auth login`
+- [x] öffentliches Repository `csv-klar` erstellen
+- [x] Repository pushen und GitHub Pages aktivieren
+- [x] veröffentlichte URL in Posting-Paket und CTAs eintragen
 - [ ] Feedbackformular mit einem echten Test-Issue prüfen
 - [ ] falls in Deutschland geschäftsmäßig betrieben: Impressumspflicht prüfen und erforderliche Anbieterangaben ergänzen
 - [ ] Datenschutzhinweise für Hosting, Plattform-Links und späteres Analytics prüfen

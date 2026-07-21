@@ -40,8 +40,10 @@ Die CSV-Verarbeitung geschieht im Browser. Es gibt in diesem MVP kein Backend, k
 - `sample.csv` – Beispieldaten
 - `PRODUCT_VALIDATION.md` – Validierungs- und Veröffentlichungsplan
 - `ALPHA_TEST.md` – Leitfaden für fünf beobachtete Nutzertests
+- `ALPHA_OUTREACH.md` – fünf fertige Einladungen und Testübersicht
 - `LAUNCH_CHECKLIST.md` – Voraussetzungen für den öffentlichen Alpha-Start
 - `content/series-01.md` – erste Serie mit zehn Kurzvideo-Skripten
+- `content/posting-01.md` – Captions, Beschreibung und Messplan für den Pilotclip
 - `content/video-01/` – Plan, Render-Skript und fertiger Pilotclip
 
 ## Veröffentlichung über GitHub Pages
